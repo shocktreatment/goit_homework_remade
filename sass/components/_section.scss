@@ -1,0 +1,12 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    @include mobile {
+        padding: 60px 0;
+    }
+
+    @include tablet {
+        padding: 60px 0;
+    }
+}

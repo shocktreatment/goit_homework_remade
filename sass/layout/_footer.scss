@@ -1,0 +1,113 @@
+.footer {
+    background-color: var(--background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    @include tablet {
+        flex-wrap: wrap;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: start;
+    }
+}
+
+.footer__studio {
+
+    margin-bottom: 60px;
+
+    @include mobile {
+        justify-content: center;
+
+        margin-bottom: 60px;
+    }
+
+    @include tablet {
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        // flex-grow: 0;
+    }
+
+    @include desktop {
+        // flex-grow: 1;
+    }
+}
+
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+
+    color: var(--white-color);
+
+    @include desktop {
+        text-align: start;
+    }
+
+}
+
+.address {
+    @include mobile {
+        text-align: center;
+    }
+
+    @include tablet {
+        text-align: center;
+    }
+
+    @include desktop {
+        text-align: start;
+    }
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.location {
+    color: var(--white-color);
+}

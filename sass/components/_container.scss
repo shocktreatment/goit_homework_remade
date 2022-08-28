@@ -1,0 +1,32 @@
+// .container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+// }
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+
+
+    @include mobile {
+        max-width: 480px;
+        // background-color: red;
+    }
+
+    @include tablet {
+        max-width: 768px;
+        // background-color: green;
+    }
+
+    @include desktop {
+        max-width: 1200px;
+        // background-color: rgb(255, 255, 0);
+    }
+
+
+
+
+
+}
